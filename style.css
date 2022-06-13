@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Epilogue', sans-serif;
+}
+
+
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background: hsl(0, 0%, 98%);
+}
+
+header {
+
+
+    padding: 20px 30px;
+
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-right: 30px;
+}
+
+.navlist {
+    display: flex;
+    padding-left: 100px;
+    list-style-type: none;
+}
+
+.navlist li {
+    padding: 10px 20px;
+
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0px 5px;
+    color: hsl(0, 0%, 41%);
+}
+
+.buttons a:last-child {
+    border-radius: 10px;
+    border: 2px solid hsl(0, 0%, 41%);
+
+}
+
+
+.container {
+    height: 700px;
+    display: flex;
+    padding: 20px 50px;
+}
+
+.left-container,
+.right-container {
+    width: 50%;
+    height: 100%;
+
+}
+
+.left-container {
+    flex-direction: column;
+    /* justify-content: space-around !important; */
+    padding: 0px 20px;
+}
+
+.heading h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+
+}
+
+.para p {
+    font-size: 18px;
+    padding: 2% 8% 8% 8%;
+    color: hsl(0, 0%, 41%);
+
+}
+
+.logo {
+    position: absolute;
+    left: 40px;
+    top: 28px;
+}
+
+
+
+
+.right-container,
+.left-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    margin-right: 60%;
+}
+
+.button a {
+
+    padding: 15px 20px;
+    color: hsl(0, 0%, 98%);
+    border-radius: 15px;
+    text-decoration: none;
+    background: hsl(0, 0%, 8%);
+
+}
+
+.sponser {
+    /* width: 100%; */
+    padding-top: 80px;
+
+}
+
+
+.img img {
+    margin: 10px;
+    width: 80px;
+}
+
+.button a:hover {
+    color: hsl(0, 0%, 41%);
+    border: 2px solid hsl(0, 0%, 41%);
+    background: transparent;
+}
+
+
+.hero {
+    height: 75%;
+    width: 90%;
+    /* margin-top: -80px; */
+    background: url('/images/image-hero-desktop.png') no-repeat   center/cover;
+    /* background-position: 100%; */
+    background-size: 100% 100%;
+ 
+
+
+}
+
+.hero img {
+    /* width: 100%;
+    height: 100%; */
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    z-index: 999;
+
+}
+.drops, .drop{
+    list-style-type: none;
+    position: absolute;
+    top: 60px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 5px;
+    left: 100px;
+   
+    display: none;
+}
+.drop li , .drops li{
+ padding: 5px; 
+}
+
+.drop li a , .drops li a{
+    font-size: 14px;
+    padding: 0px 2px;
+    /* line-height: -1; */
+}
+.drop li:hover , .drops li:hover{
+     background-color: rgba(192, 186, 186, 0.221);
+}
+.drops img{
+    margin-right: 5px;
+
+}
+.drop{
+    left: 300px;
+
+}
+
+.up{
+    display: none;
+
+}
+
+/* .active{
+    display: none;
+} */
+
+/* // style sheet for responsiveness   */
+
+
+@media screen and (max-width: 830px) {
+
+    .heading h1 {
+        font-size: 3.2rem;
+        margin-bottom: 30px;
+
+    }
+    .drop {
+        left: 113px;
+        top: 86px;
+    }
+
+    .para p {
+
+        padding: 2% 6% 8% 5%;
+
+    }
+
+
+
+    .button a {
+
+        padding: 15px 15px;
+
+    }
+
+    .button {
+        margin-right: 50%;
+    }
+
+    .button a {}
+
+    .buttons a:last-child {
+        border-radius: 10px;
+        border: 2px solid hsl(0, 0%, 41%);
+
+    }
+
+    .hero {
+        height: 70%;
+        margin-top: -80px;
+    }
+   
+}
+
+@media screen and (max-width: 750px) {
+    .container{
+        /* justify-content: ; */
+        flex-direction: column-reverse;
+    }
+    .container{
+        padding: 5px;
+    }
+    .left-container,
+    .right-container {
+        width: 100%;
+       
+    
+    }
+    .right-container{
+        margin-top: 20px;
+        height: 60%;
+    }
+    .left-container{
+        height: 40%;
+    }
+    br{
+        display: none;
+    }
+ 
+    .hero {
+        /* margin-top: -80px; */
+        background: url('/images/image-hero-mobile.png') ;
+        background-size: 100% 100%;
+    }
+    
+    .burger {
+        display: block;
+    }
+      .aa1{
+        display: none;
+      }
+    .navbar {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: flex-start;
+        background-color: hsl(0, 0%, 98%);
+        padding-right: 50px;
+        padding-top: 20px;
+        display: none;
+
+    }
+
+    .logo {
+        position: absolute;
+        left: 40px;
+        top: 50px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navlist {
+        margin-top: 50px;
+
+        flex-direction: column;
+        /* align-items: ; */
+        justify-content: left;
+        align-items: left;
+        padding-right: 80px;
+    }
+
+    .buttons {
+
+        display: flex;
+        flex-direction: column;
+    }
+    .heading h1 {
+        font-size: 3.2rem;
+        margin-bottom: 30px;
+
+    }
+
+    .para p {
+
+        padding: 2% 6% 8% 5%;
+        line-height: 1.5;
+
+    }
+
+    .button a {
+
+        padding: 15px 15px;
+
+    }
+
+    .button {
+        margin-right: 50%;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) { 
+
+ .heading h1{
+    font-size: 30px;
+    margin-bottom: 15px;
+ }
+ .para p {
+
+    padding: 10px 10px;
+    margin: 0px 10px 20px 10px;
+
+    text-align: center;
+
+}
+
+
+.button {
+    margin-right: 0px;
+}
+.button a{
+    padding: 12px 13px;
+
+}
+.img img{
+    width: 50px;
+    
+}
+.sponser{
+    padding-top: 20px;
+}
+
+}
